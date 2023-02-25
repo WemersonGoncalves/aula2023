@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>MooNow</title>
+</head>
+<body>
+    <header>
+        <div class="logoItem"> 
+            <img src="./assets/images/Design Místico Logotipo 2.png" alt="MooNow Logo">
+        </div>
+        <div class="navHeaderItens">
+            <h2 id="buttonLearMore" onclick="modalLearMore(i)">Quem Somos</h2>
+            <h2>Nosso Propósito</h2>
+            <h2>Suporte</h2>
+        </div>
+    </header>
+    <div id="showModalDialog" class="modalDialog"></div>
+    <div id="showModalDialog2" class="modalDialog2"></div>
+    <main>
+        <section class="leftItens">
+            <div class="registerText">
+                <h1>INSCREVA-SE E VIAJE PARA A LUA GRATUITAMENTE</h1>
+            </div>
+            <div class="registerInputs">
+                <input type="text" id="fullNameField" placeholder="Nome Completo">
+                <p id="alertNameField"></p>
+                <input type="email" id="emailField" placeholder="Email">
+                <p id="alertMailField"></p>
+            </div>
+            <div class="buttonsRegLearnMore">
+                <div class="regSubmit">
+                <input type="button" id="buttonRegister" value="Quero ir pra lua!" onclick="checkInfoSubmit()">
+                <p id="subBtnAlert"></p>
+                </div>
+                <input type="button" id="buttonLearMore" onclick="modalMoreInfo(i)" value="Mais informações">
+            </div>
+            
+        </section>
+        <section class="rightItens">
+            <img src="./assets/images/hero-ilustration.png" alt="Man on the Rocket">
+        </section>
+    </main>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

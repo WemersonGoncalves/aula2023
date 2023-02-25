@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500&family=Lexend+Deca:wght@300;400&family=Raleway:wght@300;400;500&display=swap');
+
+:root{
+    --backgroundColor: linear-gradient(#100f0e,#1f102b,#23193e);
+    --inputBackgroundColor: #9F7FDB;
+    --buttonLearnMoreColor: #9F7FDB;
+    --buttonRegisterColor: #7834F3;
+    --headerTextColor: #E0DAED;
+    --leftTextColor: #9F7FDB;
+    --inputTextColor:#FFFFFF;
+    --buttonRegTextColor:#E9E1FD;
+    --buttonTextLearnMoreColor: #FFFFFF;
+    --modalBackground: linear-gradient(#a9d2c9,#b7d5c2,#f1dea5);
+    --hoverColor:#3769a0;
+    --hoverTextColor:#4d17a3;
+    --textHeaderStyle: 'Baloo Bhaina 2';
+    --textLeftStyle:  'Baloo Bhaina 2';
+    --textInputStyle: 'Lexend Deca';
+    --textButtonStyle: 'Baloo Bhaina 2';
+    --fontModal: 'Lexend Deca';
+}
+body{
+    background-image: var(--backgroundColor);
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logoItem{
+    width: 45%;
+    justify-content: flex-start;
+}
+header .navHeaderItens{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    text-align: center;
+
+    font-family: var(--textHeaderStyle);
+    font-style: ExtraBold;
+    font-size: 15px;
+    line-height: 40px;
+    line-height: 100%;
+    color: var(--headerTextColor);
+}
+header .navHeaderItens #buttonLearMore:hover{
+    cursor: pointer;
+    color: var(--hoverColor);
+}
+.modalDialog {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    z-index: 1;
+}
+.modalDialog .modalContent {
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    background: var(--modalBackground);
+    border-radius: 20px;
+}
+.modalDialog .modalContent h2 {
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 5px;
+}
+.modalDialog .modalContent p{
+    padding: 50px;
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+.modalCloseBtn {
+    margin-top: 20px;
+    margin-left: 620px;
+    background-color: var(--modalBackground);
+    border: none;
+}
+.modalCloseBtn:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
+.modalDialog2 {
+    display: none;
+    position: absolute;
+    left: 18%;
+    top: 150px;
+    z-index: 1;
+
+}
+.modalDialog2 .modalContent {
+    width: 900px;
+    height: 700px;
+    text-align: center;
+    align-items: center;
+    background: var(--modalBackground);
+    border-radius: 20px;
+}
+.modalDialog2 .modalContent h2 {
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 5px;
+}
+.modalDialog2 .modalContent p{
+    padding: 50px;
+    font-family: var(--fontModal);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+.modalCloseBtn2 {
+    margin-top: 20px;
+    margin-left: 820px;
+    background-color: var(--modalBackground);
+    border: none;
+}
+.modalCloseBtn2:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
+main{
+    display: flex;
+}
+main .leftItens{
+    display: flex;
+    width: 40%;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+main .leftItens .registerText{
+    margin-top: 100px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    
+    font-family: var(--textLeftStyle);
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--leftTextColor);
+}
+main .leftItens .registerInputs{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+}
+main .leftItens .registerInputs input{
+    background-color: var(--inputBackgroundColor);
+    width: 300px;
+    height: 60px;
+    border: none;
+
+    border-radius: 10px;
+    padding-left: 10px;
+    
+    font-family: var(--textInputStyle);
+    Font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+}
+main .leftItens .registerInputs input::placeholder{
+    color: var(--inputTextColor);
+}
+main .leftItens .buttonsRegLearnMore{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    margin-left: 70px;
+}
+main .leftItens .buttonsRegLearnMore .regSubmit{
+    display: flex;
+    flex-direction: column;
+}
+main .leftItens .buttonsRegLearnMore .regSubmit #buttonRegister{
+    background-color: var(--buttonRegisterColor);
+    border: none;
+    
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+
+    font-family: var(--textButtonStyle);
+    font-style: bold;
+    font-size: 20px;
+    color: var(--buttonRegTextColor);
+}
+main .leftItens .buttonsRegLearnMore #buttonLearMore{
+    background-color: var(--buttonLearnMoreColor);
+    border: none;
+
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+
+    font-family: var(--textButtonStyle);
+    font-style: bold;
+    font-size: 20px;
+    color: var(--buttonTextLearnMoreColor);
+}
+main .leftItens .buttonsRegLearnMore #buttonLearMore:hover{
+    cursor: pointer;
+    background-color: var(--hoverColor);
+    color: var(--hoverTextColor);
+}
+main .leftItens .buttonsRegLearnMore .regSubmit #buttonRegister:hover{
+    cursor: pointer;
+    background-color: var(--hoverColor);
+    color: var(--hoverTextColor);
+
+}
+main .rightItens{
+    margin-top: 100px;
+    margin-left: 120px;
+    width: 400px;
+    height: 700px;
+    justify-content: end
+}
